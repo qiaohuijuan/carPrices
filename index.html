@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <title>cartrain</title>
+  <script>
+    document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px'
+
+  </script>
+  <style>
+    #app{
+      position: relative;
+      width:100%;
+      height: 100%;
+    }
+    
+    .loading div {
+      position: relative;
+      top: 50%;
+      left: 2.65rem;
+      -webkit-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -50%, 0);
+      width: 2.2rem;
+      height: 2.2rem;
+      background: #000;
+      border-radius: .2rem;
+    }
+
+    .loading div img {
+      width: 1rem;
+      margin-top: .35rem;
+    }
+
+    .loading div p {
+      font-size: .3rem;
+      color: silver;
+      margin-top: .3rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div id="loading" class="loading">
+      <div>
+        <img src="./static/img/loading.gif">
+        <p>加载中...</p>
+      </div>
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

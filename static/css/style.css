@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body,
+#app,
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.wrap .list {
+  width: 100%;
+}
+
+.wrap .list h2 {
+  font-size: .72rem;
+  font-size: .28rem;
+  line-height: .4rem;
+  background: #f4f4f4;
+  padding-left: .3rem;
+  color: #aaa;
+}
+
+.wrap .list .cartype {
+  width: 100%;
+  margin: 0 .3rem;
+}
+
+.wrap .list .cartype li {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+
+.wrap .list .cartype li img {
+  width: .8rem;
+  height: .8rem;
+}
+
+.wrap .list .cartype li span {
+  font-size: .32rem;
+  margin-left: .4rem;
+}
+
+.wrap .fixed {
+  z-index: 99;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-left: .2rem;
+}
+
+.wrap .fixed i {
+  display: block;
+  font-size: .24rem;
+  height: .4rem;
+  text-align: center;
+  color: #666;
+  font-weight: 500;
+  padding: .02rem .1rem;
+}
+
+.wrap .fixed a {
+  display: block;
+  font-size: .24rem;
+  color: #666;
+  font-weight: 500;
+  padding: .02rem .1rem;
+}
+
+.wrap .asider {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0 1rem #eee;
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
+.wrap .asider.active {
+  transform: translateX(0);
+}
+
+.wrap .asider .asiderCars {
+  width: 100%;
+}
+
+.wrap .asider .asiderCars > p {
+  width: 100%;
+  text-indent: .2rem;
+  font-size: .32rem;
+  background: #f2f2f2;
+  height: 1rem;
+  line-height: 1rem;
+  color: #717171;
+}
+
+.wrap .asider .asiderCars .asilder_list {
+  width: 100%;
+}
+
+.wrap .asider .asiderCars .asilder_list a {
+  display: inline-block;
+  width: 100%;
+  height: 1.6rem;
+  display: flex;
+  border-bottom: .1px solid #f2f2f2;
+  align-items: center;
+}
+
+.wrap .asider .asiderCars .asilder_list a img {
+  height: 1rem;
+  margin: 0 .2rem;
+}
+
+.wrap .asider .asiderCars .asilder_list a .carders {
+  flex: 1;
+}
+
+.wrap .asider .asiderCars .asilder_list a .carders p {
+  color: #999;
+  font-size: .28rem;
+}
+
+.wrap .asider .asiderCars .asilder_list a .carders small {
+  color: red;
+  font-size: .36rem;
+}
+
+.wrap .listwrap {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
+
